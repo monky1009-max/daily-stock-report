@@ -76,7 +76,7 @@ def send_kakao_message(access_token, text):
             "link": {{"web_url": "https://m.stock.naver.com"}}
         }}'''
     }
-    res = requests.post(url, headers=headers, data=payload.encode('utf-8'))
+    res = requests.post(url, headers=headers, data=payload)
     return res.status_code
 
 # ---------------------------------------------------------
